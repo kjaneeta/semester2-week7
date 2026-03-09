@@ -21,7 +21,7 @@ def read_marks(filename):
         infile.readline()  # skip column headings
         for line in infile:
             name, mark = line.strip().split(",")
-            data[name] = mark
+            data[name] = int(mark)
         return data
 
 
