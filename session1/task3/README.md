@@ -58,6 +58,7 @@
 
        wc -c task3
 
+   number = 16256
    Make a note of the number you see. Then edit `Makefile` so that the
    `CFLAGS` variable includes a definition of the `NDEBUG` preprocessor
    symbol:
