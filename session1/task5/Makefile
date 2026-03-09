@@ -1,6 +1,6 @@
 # Task 5 Makefile
 
-CFLAGS = -g
+CFLAGS = -g -Wall -Wextra -Werror
 EXECS = factorial vars
 
 help:

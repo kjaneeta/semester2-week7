@@ -139,6 +139,11 @@ line, but it has some problems.
        p argv[0]
        p argv[1]
 
+       $3 = 0x7fffffffd3ff "/workspaces/semester2-week7/session1/task5/factorial"
+   (gdb) p argv[1]
+   $4 = 0x7fffffffd434 "5"
+   (gdb) 
+
 5. Use `next` or `n` twice, to move past the code that parses the command
    line. Print the variable `value`, to check that it is equal to 5 as
    expected.
@@ -150,6 +155,12 @@ line, but it has some problems.
    will include details of the arguments passed to the function:
 
        factorial (n=5) at factorial.c:6
+
+(gdb) s
+factorial (n=5) at factorial.c:6
+6           return n * factorial(n - 1);
+
+
 
 6. Use `s` three more times to continue invoking `factorial()` recursively.
    Notice how the value of parameter `n` descreases by 1 each time.
