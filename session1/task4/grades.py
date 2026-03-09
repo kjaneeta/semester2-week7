@@ -45,8 +45,16 @@ def grade(mark):
         raise MarkError("marks must be in range 0-100")
 
 
+#Now it should be clear what the problem is. In normal usage of the program,
+   #`sys.argv` contains 2 elements: the name of the program and the name of
+   #the file containing the exam marks. However, the `if` statement that
+   #begins on line 49 is displaying an error if the size of `sys.argv` is not
+   #equal to 1.
+
+
+
 if __name__ == "__main__":
-    if len(sys.argv) != 1:
+    if len(sys.argv) != 2:
         sys.exit("Usage: python grades.py <csv-filename>")
 
     marks = read_marks(sys.argv[1])
