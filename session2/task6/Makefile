@@ -1,6 +1,6 @@
 # Makefile for Task 6
 
-CFLAGS = -g #-fsanitize=address -fno-omit-frame-pointer
+CFLAGS = -g -fsanitize=address -fno-omit-frame-pointer
 EXECS = noleak leak use_after stack_over heap_over testlogin
 
 help:
